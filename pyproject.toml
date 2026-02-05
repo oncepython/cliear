@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cliear"
+version = "0.0.1"
+description = "Simple library for building CLI tools."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  {name = "oncepython", email = "hsxb2024@163.com"}
+]
+keywords = ["cli", "argparse", "command line tool", "command line interface", "command line", "argument parser"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/oncepython/cliear"
+Repository = "https://github.com/oncepython/cliear"
+Issues = "https://github.com/oncepython/cliear/issues"
+
+[tool.setuptools]
+py-modules = ["cliear"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pycliear.__version__"}
